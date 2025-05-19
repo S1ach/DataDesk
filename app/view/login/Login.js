@@ -51,8 +51,8 @@ Ext.define('DataDesk.view.login.Login', {
 
 
     requires: [
-        'DataDesk.view.login.LoginController',
-        'DataDesk.view.login.LoginModel'
+        'DataDesk.controller.LoginController',
+        'DataDesk.model.LoginModel'
     ],
 
     controller: 'login',

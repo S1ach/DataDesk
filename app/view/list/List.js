@@ -1,7 +1,4 @@
-/**
- * This view is an example list of people.
- */
-Ext.define('DataDesk.view.main.List', {
+Ext.define('DataDesk.view.list.List', {
     extend: 'Ext.panel.Panel',
     xtype: 'mainlist',
 
@@ -51,25 +48,23 @@ Ext.define('DataDesk.view.main.List', {
                 xtype: 'textfield',
                 fieldLabel: 'ID:',
                 emptyText: 'Введите ID',
-                itemID: 'IDFilterField',
+                itemId: 'IDFilterField',
                 enableKeyEvents: true,
                 listeners: {
-                    keyup: 'onIDFilterChange'
+                    specialkey: 'onIDFilter'
                 }
             },
                 {
                     xtype: 'textfield',
                     fieldLabel: 'Описание:',
                     emptyText: 'Введите фильтр',
-                    itemID: 'DESCFilterField',
+                    itemId: 'DESCFilterField',
                     enableKeyEvents: true,
                     listeners: {
-                        keyup: 'onDESCFilterChange'
+                        specialkey: 'onDESCFilter'
                     }
-                }
-            ]
-        }
-        ],
+                }]
+        }],
 
         columns: [
             { text: 'ID',  dataIndex: 'ID' },

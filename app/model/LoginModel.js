@@ -1,4 +1,4 @@
-Ext.define('DataDesk.view.login.LoginModel', {
+Ext.define('DataDesk.model.LoginModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.login',
 
@@ -6,5 +6,7 @@ Ext.define('DataDesk.view.login.LoginModel', {
     },
 
     data: {
+        username: '',
+        password: ''
     }
 });

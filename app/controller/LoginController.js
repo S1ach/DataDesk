@@ -1,4 +1,4 @@
-Ext.define('DataDesk.view.login.LoginController', {
+Ext.define('DataDesk.controller.LoginController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.login',
 

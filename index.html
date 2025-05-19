@@ -18,12 +18,8 @@
             if (s.match(/\bclassic\b/)) {
                 profile = 'classic';
             }
-            else if (s.match(/\bmodern\b/)) {
-                profile = 'modern';
-            }
             else {
                 profile = tags.desktop ? 'classic' : 'modern';
-                //profile = tags.phone ? 'modern' : 'classic';
             }
 
             Ext.manifest = profile;

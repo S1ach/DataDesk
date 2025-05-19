@@ -1,4 +1,4 @@
-Ext.define('DataDesk.view.main.MainModel', {
+Ext.define('DataDesk.model.MainModel', {
     extend: 'Ext.app.ViewModel',
 
     alias: 'viewmodel.main',

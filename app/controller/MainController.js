@@ -1,4 +1,4 @@
-Ext.define('DataDesk.view.main.MainController', {
+Ext.define('DataDesk.controller.MainController', {
     extend: 'Ext.app.ViewController',
 
     alias: 'controller.main',

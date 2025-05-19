@@ -2,19 +2,16 @@ $app-name:  dynamic( 'DataDesk' );
 $image-search-path: 'C:/Users/sarp2/WebstormProjects/DataDesk/build/development/DataDesk/classic/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-datadesk-application: dynamic(true);;
+$include-datadesk-controller-listcontroller: dynamic(true);;
+$include-datadesk-controller-logincontroller: dynamic(true);;
+$include-datadesk-controller-maincontroller: dynamic(true);;
+$include-datadesk-model-listmodel: dynamic(true);;
+$include-datadesk-model-loginmodel: dynamic(true);;
+$include-datadesk-model-mainmodel: dynamic(true);;
 $include-datadesk-store-products: dynamic(true);;
-$include-datadesk-view-itemdetailwindow-itemdetailwindow: dynamic(true);;
-$include-datadesk-view-itemdetailwindow-itemdetailwindowcontroller: dynamic(true);;
-$include-datadesk-view-itemdetailwindow-itemdetailwindowmodel: dynamic(true);;
-$include-datadesk-view-list-listcontroller: dynamic(true);;
-$include-datadesk-view-list-listmodel: dynamic(true);;
+$include-datadesk-view-list-list: dynamic(true);;
 $include-datadesk-view-login-login: dynamic(true);;
-$include-datadesk-view-login-logincontroller: dynamic(true);;
-$include-datadesk-view-login-loginmodel: dynamic(true);;
-$include-datadesk-view-main-list: dynamic(true);;
 $include-datadesk-view-main-main: dynamic(true);;
-$include-datadesk-view-main-maincontroller: dynamic(true);;
-$include-datadesk-view-main-mainmodel: dynamic(true);;
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
 $include-ext-abstractmanager: dynamic(true);;
@@ -957,14 +954,6 @@ $current-resource-root: $theme-triton-resource-root;
 $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/etc/all';
 
-/* including package DataDesk */
-$DataDesk-resource-root: '' !default;
-$DataDesk-resource-path: 'images' !default;
-$current-package: false;
-$current-resource-root: $DataDesk-resource-root;
-$relative-image-path-for-uis: $DataDesk-resource-path;
-@import '../../../../../sass/etc/all';
-
 
 /* ======================== VAR ======================== */
 
@@ -1137,14 +1126,6 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/var/tab/Tab';
 @import '../../../../../ext/classic/theme-triton/sass/var/tab/Bar';
 @import '../../../../../ext/classic/theme-triton/sass/var/tree/View';
-
-/* including package DataDesk */
-$DataDesk-resource-root: '' !default;
-$DataDesk-resource-path: 'images' !default;
-$current-package: false;
-$current-resource-root: $DataDesk-resource-root;
-$relative-image-path-for-uis: $DataDesk-resource-path;
-@import '../../../../../sass/var/all';
 
 
 /* ======================== RULE ======================== */

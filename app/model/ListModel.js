@@ -1,4 +1,4 @@
-Ext.define('DataDesk.view.list.ListModel', {
+Ext.define('DataDesk.model.ListModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.list',
 

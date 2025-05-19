@@ -6,7 +6,11 @@ Ext.define('DataDesk.store.Products', {
     pageSize: 20,
 
     fields: [
-        'ID', 'Имя', 'Описание', 'Цена', 'Кол-во'
+        { name: 'ID', type: 'int' },
+        { name: 'Имя', type: 'string' },
+        { name: 'Описание', type: 'string' },
+        { name: 'Цена', type: 'float' },
+        { name: 'Кол-во', type: 'int' }
     ],
 
     data: [

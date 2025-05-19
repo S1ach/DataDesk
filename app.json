@@ -21,12 +21,6 @@
             "theme": "theme-triton",
             "sass": {
             }
-        },
-        "modern": {
-            "toolkit": "modern",
-            "theme": "theme-neptune",
-            "sass": {
-            }
         }
     },
     "cache": {
