@@ -86,5 +86,5 @@ Ext.define('DataDesk.view.main.Main', {
                 xtype: 'mainlist'
             }]
 
-    }],
+    }]
 });

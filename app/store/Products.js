@@ -16,7 +16,7 @@ Ext.define('DataDesk.store.Products', {
         { ID: 4, name: 'Товар 4', desc: 'Описание товара 4', price: 300, count: 2 },
         { ID: 4, name: 'Товар 4', desc: 'Описание товара 4', price: 300, count: 0 },
         { ID: 4, name: 'Товар 4', desc: 'Описание товара 4', price: 300, count: 0 },
-        { ID: 4, name: 'Товар 4', desc: 'Описание товара 4', price: 300, count: 2 },
+        { ID: 4, name: 'Товар 4', desc: 'Описание товара 4', price: 300, count: 2 }
     ],
 
     proxy: {

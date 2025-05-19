@@ -1,6 +1,3 @@
-/**
- * Created by sarp2 on 15.05.2025.
- */
 Ext.define('DataDesk.view.login.Login', {
     extend: 'Ext.form.Panel',
     xtype: 'login',
@@ -48,7 +45,7 @@ Ext.define('DataDesk.view.login.Login', {
                 formBind: true,
                 handler: 'onLoginClick'
             }
-        ],
+        ]
     }],
 
 
@@ -61,6 +58,6 @@ Ext.define('DataDesk.view.login.Login', {
     controller: 'login',
     viewModel: {
         type: 'login'
-    },
+    }
 });
 

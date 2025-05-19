@@ -68,7 +68,7 @@ Ext.define('DataDesk.view.main.List', {
                     }
                 }
             ]
-        },
+        }
         ],
 
         columns: [
@@ -82,10 +82,10 @@ Ext.define('DataDesk.view.main.List', {
                     }
                     return value;
                 }}
-        ],
+        ]
 
 
-    }],
+    }]
 
 
 

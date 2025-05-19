@@ -1,15 +1,9 @@
-/**
- * Created by sarp2 on 15.05.2025.
- */
 Ext.define('DataDesk.view.login.LoginController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.login',
 
 
 
-    /**
-     * Called when the view is created
-     */
     onLoginClick: function() {
         const view = this.getView();
         const vm = this.getViewModel();

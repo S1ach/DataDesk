@@ -1,13 +1,7 @@
-/**
- * Created by sarp2 on 16.05.2025.
- */
 Ext.define('DataDesk.view.list.ListController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.list',
 
-    /**
-     * Called when the view is created
-     */
     onIDFilterChange: function(field, value) {
         
     },
@@ -19,7 +13,7 @@ Ext.define('DataDesk.view.list.ListController', {
             title: record.get('name'),
             modal: true,
             width: 400,
-            height: 350,
+            height: 300,
             layout: 'form',
             bodyPadding: 10,
             defaults: {
@@ -29,12 +23,12 @@ Ext.define('DataDesk.view.list.ListController', {
             items: [{
                 xtype: 'displayfield',
                 fieldLabel: 'ID',
-                value: record.get('ID'),
+                value: record.get('ID')
             },
             {
                 xtype: 'displayfield',
                 fieldLabel: 'Наименование',
-                value: record.get('name'),
+                value: record.get('name')
             },
             {
                 xtype: 'numberfield',
@@ -42,7 +36,9 @@ Ext.define('DataDesk.view.list.ListController', {
                 value: record.get('price'),
                 itemId: 'priceField',
                 minValue: 0,
-                allowDecimals: false
+                allowDecimals: true,
+                decimalPrecision: 2,
+                allowNegative: false
             },
             {
                 xtype: 'numberfield',
@@ -50,8 +46,9 @@ Ext.define('DataDesk.view.list.ListController', {
                 value: record.get('count'),
                 itemId: 'countField',
                 minValue: 0,
-                allowDecimals: false
-            },
+                allowDecimals: false,
+                allowNegative: false
+            }
 
             ],
             buttons: [
@@ -59,7 +56,7 @@ Ext.define('DataDesk.view.list.ListController', {
                 text: 'Сохранить',
                 formBind: true,
                 handler: 'SaveClick'
-            },]
+            }]
         }).show();
-    },
+   }
 });
