@@ -2,8 +2,8 @@ Ext.define('DataDesk.controller.ListController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.list',
 
-    onIDFilter: function(field, btn) {
-        if (btn.getKey() === btn.ENTER) {
+    onIDFilter: function(field, e) {
+        if (e.getKey() === e.ENTER) {
             var value = field.getValue();
             var grid = field.up('gridpanel');
             var store = grid.getStore();
@@ -23,8 +23,8 @@ Ext.define('DataDesk.controller.ListController', {
         }
     },
 
-    onDESCFilter: function(field, btn) {
-        if (btn.getKey() === btn.ENTER) {
+    onDESCFilter: function(field, e) {
+        if (e.getKey() === e.ENTER) {
             var value = field.getValue();
             var grid = field.up('gridpanel');
             var store = grid.getStore();
@@ -99,32 +99,6 @@ Ext.define('DataDesk.controller.ListController', {
                     handler: 'saveClick'
                 }]
         }).show();
-    },
-
-    // saveClick: function (button) {
-    //     var win = button.up('window');
-    //     var priceField = win.down('#priceField');
-    //     var countField = win.down('#countField');
-    //     var record = win.record;
-    //
-    //     record.set({
-    //         price: priceField.getValue(),
-    //         count: countField.getValue()
-    //     });
-    //
-    //     var store = record.store;
-    //     if (store) {
-    //         store.sync({
-    //             success: function () {
-    //                 win.close();
-    //             },
-    //             failure: function () {
-    //                 Ext.Msg.alert('Ошибка', 'Не удалось сохранить данные');
-    //             }
-    //         });
-    //     } else {
-    //         win.close();
-    //     }
-    // }
+    }
 
 });

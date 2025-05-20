@@ -6,7 +6,7 @@ Ext.define('DataDesk.model.ListModel', {
         products: {
             type: 'products',
             autoLoad: true,
-            pageSize: 5
+            pageSize: 10
         }
     },
 
